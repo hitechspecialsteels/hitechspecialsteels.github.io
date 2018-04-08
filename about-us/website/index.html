@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+<head>
+  <!-- meta-data -->
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hi-Tech Special Steels Ltd - </title>
+  <meta name="description" content=""/>
+  <meta name="keywords" content="Steel, Dinnington, Alloys, United Kingdom, Hi Tech Special Steels Ltd"/>
+  <meta name="author" content="Hi-Tech Special Steels Ltd"/>
+  <!-- styles -->
+  <link rel="stylesheet" href="/styles/stylesheet_main.css"/>
+  <link rel="stylesheet" href="/styles/stylesheet_home.css"/>
+  <!-- scripts -->
+  <script type="text/javascript" src="/scripts/script_main.js">navopenFunction(), stickynavFunction()</script>
+  <script src="/scripts/jquery-3.3.1.min.js"></script>
+  <script>
+  $.get("/elements/headernav.html", function(data){$("#insertheader").replaceWith(data);});
+  $.get("/elements/footer.html", function(data){$("#insertfooter").replaceWith(data);});
+  </script>
+</head>
+<body onscroll="stickynavFunction()">
+
+<!-- header and navigation bar -->
+<div id="insertheader">
+</div>
+
+<div id="firstelement" class="contentspacer"></div>
+
+<!-- section:  -->
+<section>
+  <div class="container">
+    <h1>About This Website</h1>
+  </div>
+</section>
+
+<div class="contentspacer"></div>
+
+<!-- footer -->
+<div id="insertfooter">
+</div>
+
+</body>
+</html>

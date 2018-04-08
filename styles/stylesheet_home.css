@@ -1,0 +1,59 @@
+/* home navigation boxes */
+.homenavbox {
+  border: 1px solid black;
+  box-sizing: border-box;
+  font-weight: bold;
+  background-color: #104296;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  cursor: pointer;
+}
+
+.columnbox a {
+  text-decoration: none;
+}
+
+.dropdownspacer {
+  height: 152px;
+}
+
+.homenavbox-items {
+  display: none;
+  border-top: 1px solid black;
+  overflow-y: auto;
+  max-height: 150px;
+  width: 100%;
+}
+
+.homenavbox:hover {
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+}
+
+.homenavbox:hover .homenavbox-items {
+  display: block;
+}
+
+.homenavbox-items a {
+  display: block;
+  padding: 12px 16px;
+  text-decoration: none;
+  color: black;
+  background-color: #f9f9f9;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.homenavbox-items a:hover {
+  background-color: #ddd;
+}
+
+.homenavbox p {
+  color: #ffffff;
+  text-align: center;
+}
+
+.homenavbox img {
+  width:100%;
+  border-bottom: 1px solid black;
+}

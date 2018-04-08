@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+<head>
+  <!-- meta-data -->
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hi-Tech Special Steels Ltd</title>
+  <meta name="description" content="Hi-Tech Special Steels is a privately owned company, originally established in 1985 to provide customers with special products not available in general supply."/>
+  <meta name="keywords" content="Steel, Dinnington, Alloys, United Kingdom, Hi Tech Special Steels Ltd"/>
+  <meta name="author" content="Hi-Tech Special Steels Ltd"/>
+  <!-- styles -->
+  <link rel="stylesheet" href="/styles/stylesheet_main.css"/>
+  <link rel="stylesheet" href="/styles/stylesheet_home.css"/>
+  <!-- scripts -->
+  <script type="text/javascript" src="scripts/script_main.js">navopenFunction(), stickynavFunction()</script>
+  <script src="/scripts/jquery-3.3.1.min.js"></script>
+  <script>
+  $.get("/elements/headernav.html", function(data){$("#insertheader").replaceWith(data);});
+  $.get("/elements/footer.html", function(data){$("#insertfooter").replaceWith(data);});
+  </script>
+</head>
+<body onscroll="stickynavFunction()">
+
+<!-- header and navigation bar -->
+<div id="insertheader">
+</div>
+
+<div id="firstelement" class="contentspacer"></div>
+
+<!-- section: welcome -->
+<section>
+  <div class="container">
+    <p style="color: red;">Please Note: This website is currently under development, some features may be missing or incomplete, some lnks may not work. Sorry for any inconvenience.</p>
+    <h1>Welcome to Hi-Tech Special Steels Ltd</h1>
+    <p>Hi-Tech Special Steels is a privately owned company, originally established in 1985 to provide customers with special products not available in general supply.</p>
+    <p>The successful development of cold drawn square and rectangular sections for the manufacture of valve bodies soon led to various additional products being added to our now extensive range of available items.</p>
+    <p>Our success is largely down to our focus on manufacturing a high quality product supported by a superior service.</p>
+  </div>
+</section>
+
+<!-- section: section navigation -->
+<section>
+  <div class="container">
+    <div class="row-fourcol">
+      <div class="column-fourcol">
+        <div class="columnbox">
+          <div class="homenavbox">
+            <img src="resources/images/home_placeholder.png" alt="">
+            <p>ALLOYS</p>
+            <div class="homenavbox-items">
+              <a href="/alloys/stainless-steels/">Stainless Steels</a>
+              <a href="/alloys/nickel-alloys/">Nickel Alloys</a>
+              <a href="/alloys/duplex/">Duplex</a>
+              <a href="/alloys/super-duplex/">Super Duplex</a>
+              <a href="/alloys/super-austenitic/">Super Austenitic</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="column-fourcol">
+        <div class="columnbox">
+          <div class="homenavbox">
+            <img src="resources/images/home_placeholder.png" alt="">
+            <p>PRODUCTS</p>
+            <div class="homenavbox-items">
+              <a href="/products/cold-drawn-bars/">Cold Drawn Bars</a>
+              <a href="/products/rounds/">Rounds</a>
+              <a href="/products/hexagons/">Hexagons</a>
+              <a href="/products/flat/">Flat</a>
+              <a href="/products/square/">Square</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="column-fourcol">
+        <div class="columnbox">
+          <a href="/about-us/markets/">
+            <div class="homenavbox">
+              <img src="resources/images/home_placeholder.png" alt="">
+              <p>MARKETS</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="column-fourcol">
+        <div class="columnbox">
+          <a href="/about-us/processing/">
+            <div class="homenavbox">
+              <img src="resources/images/home_placeholder.png" alt="">
+              <p>PROCESSING</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="contentspacer"></div>
+
+<!-- footer -->
+<div id="insertfooter">
+</div>
+
+</body>
+</html>

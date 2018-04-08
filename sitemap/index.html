@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+<head>
+  <!-- meta-data -->
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hi-Tech Special Steels Ltd - </title>
+  <meta name="description" content=""/>
+  <meta name="keywords" content="Steel, Dinnington, Alloys, United Kingdom, Hi Tech Special Steels Ltd"/>
+  <meta name="author" content="Hi-Tech Special Steels Ltd"/>
+  <!-- styles -->
+  <link rel="stylesheet" href="/styles/stylesheet_main.css"/>
+  <link rel="stylesheet" href="/styles/stylesheet_home.css"/>
+  <!-- scripts -->
+  <script type="text/javascript" src="/scripts/script_main.js">navopenFunction(), stickynavFunction()</script>
+  <script src="/scripts/jquery-3.3.1.min.js"></script>
+  <script>
+  $.get("/elements/headernav.html", function(data){$("#insertheader").replaceWith(data);});
+  $.get("/elements/footer.html", function(data){$("#insertfooter").replaceWith(data);});
+  </script>
+</head>
+<body onscroll="stickynavFunction()">
+
+<!-- header and navigation bar -->
+<div id="insertheader">
+</div>
+
+<div id="firstelement" class="contentspacer"></div>
+
+<!-- section:  -->
+<section>
+  <div class="container">
+    <h1>Sitemap</h1>
+    <p>Can't find what you are looking for on our site? This webpage contains a list of every page available on the site. </p>
+    <div class="row-threecol">
+      <div class="column-threecol">
+        <div class="columnbox">
+          <h2>Main Pages</h2>
+          <p> <a href="/index.html">Homepage</a> - The Hi-Tech Special Steels Ltd website homepage.</p>
+          <p> <a href="#">About Us</a> - Information about Hi-Tech, our certifications, and our accreditations.</p>
+          <p> <a href="#">Our Markets</a> - Description.</p>
+          <p> <a href="#">Processing</a> - Description.</p>
+          <p> <a href="#">Contact Us</a> - Description.</p>
+          <p> <a href="#">This Website</a> - Description.</p>
+        </div>
+      </div>
+      <div class="column-threecol">
+        <div class="columnbox">
+          <h2>Alloys</h2>
+          <p> <a href="#">Stainless Steels</a> - Description.</p>
+          <p> <a href="#">Nickel Alloys</a> - Description.</p>
+          <p> <a href="#">Duplex</a> - Description.</p>
+          <p> <a href="#">Super Duplex</a> - Description.</p>
+          <p> <a href="#">Super Austenitic</a> - Description.</p>
+        </div>
+      </div>
+      <div class="column-threecol">
+        <div class="columnbox">
+          <h2>Products</h2>
+          <p> <a href="#">Cold Drawn Bars</a> - Description.</p>
+          <p> <a href="#">Rounds</a> - Description.</p>
+          <p> <a href="#">Hexagons</a> - Description.</p>
+          <p> <a href="#">Flat</a> - Description.</p>
+          <p> <a href="#">Square</a> - Description.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="contentspacer"></div>
+
+<!-- footer -->
+<div id="insertfooter">
+</div>
+
+</body>
+</html>
