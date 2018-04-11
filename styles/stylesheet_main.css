@@ -8,6 +8,10 @@ body {
   background-color: #eaeaea;
 }
 
+h1 {
+  margin-top: 5px;
+}
+
 /* content layout - container */
 .container {
   width: 75%;
@@ -23,6 +27,11 @@ body {
 /* content layout - content spacer */
 .contentspacer {
   height: 50px;
+}
+
+.columnborder {
+  border: 1px solid lightgray;
+  padding: 0px 10px 10px 10px;
 }
 
 /* content layout - dual column layout (dualcol) */
