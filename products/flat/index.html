@@ -36,6 +36,14 @@
         <div class="columnbox">
           <div class="columnborder">
             <h1>Product: Flat Bar</h1>
+            <p></p>
+            <ul id="list">
+            </ul>
+            <script>
+            $.get('/data/products/flat.txt', function(myContentFile) {
+              var lines = myContentFile.split("\r\n"); for (var line in lines) { var string = lines[line]; $("<li>" + string + "</li>").appendTo("#list"); }
+            }, 'text');
+            </script>
           </div>
         </div>
       </div>

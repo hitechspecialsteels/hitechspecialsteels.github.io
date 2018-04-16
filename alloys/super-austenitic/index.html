@@ -11,7 +11,7 @@
   <meta name="author" content="Hi-Tech Special Steels Ltd"/>
   <!-- styles -->
   <link rel="stylesheet" href="/styles/stylesheet_main.css"/>
-  <link rel="stylesheet" href="/styles/stylesheet_home.css"/>
+  <link rel="stylesheet" href="/styles/stylesheet_alloys.css"/>
   <!-- scripts -->
   <script type="text/javascript" src="/scripts/script_main.js">navopenFunction(), stickynavFunction()</script>
   <script src="/scripts/jquery-3.3.1.min.js"></script>
@@ -36,7 +36,18 @@
         <div class="columnbox">
           <div class="columnborder">
             <h1>Alloy: Super Austenitic</h1>
+            <p>The table displays the range of super-austenitic alloys we are currently able to supply, we currently hold the largest stock of the grades we supply within the United Kingdom which enables us to quickly dispatch special customer requirements.</p>
           </div>
+          <table id="table">
+            <tr>
+              <th>Our Super Austenitic Alloys:</th>
+            </tr>
+          </table>
+          <script type="text/javascript">
+          $.get('/data/alloys/super-austenitic.txt', function(myContentFile) {
+            var lines = myContentFile.split("\r\n"); for (var line in lines) { var string = lines[line]; $("<tr><td>" + string + "</td></tr>").appendTo("#table"); }
+          }, 'text');
+          </script>
         </div>
       </div>
       <div class="column-dualcol">
