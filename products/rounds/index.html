@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="/styles/stylesheet_main.css"/>
   <link rel="stylesheet" href="/styles/stylesheet_home.css"/>
   <!-- scripts -->
-  <script type="text/javascript" src="/scripts/script_main.js">navopenFunction(), stickynavFunction()</script>
+  <script type="text/javascript" src="/scripts/script_main.js">navopenFunction(), stickynavFunction(), showhideFunction()</script>
   <script src="/scripts/jquery-3.3.1.min.js"></script>
   <script>
   $.get("/elements/headernav.html", function(data){$("#insertheader").replaceWith(data);});
@@ -28,7 +28,7 @@
 
 <div id="firstelement" class="contentspacer"></div>
 
-<!-- section:  -->
+<!-- section: product dimensions -->
 <section>
   <div class="container">
     <div class="row-dualcol">
@@ -36,13 +36,21 @@
         <div class="columnbox">
           <div class="columnborder">
             <h1>Product: Round Bar</h1>
-            <p></p>
-            <p></p>
+            <p>The list below shows the available dimensions of round steel bar that we are able to produce. If you have a specific/special requirment or question regarding our steel product dimensions please contact us using the information displayed on the contact page of this website.</p>
             <ul id="list">
             </ul>
+            <p>We also offer a thread rolling service on many of our round steel products, click the link below to see our full list of thread rolling dimensions.</p>
+            <a onclick="showhideFunction()" style="color: blue; cursor: pointer;" id="togglelink">Thread Rolling Dimensions</a>
+            <div id="togglediv" style="display: none;">
+              <ul id="threadlist">
+              </ul>
+            </div>
             <script>
             $.get('/data/products/rounds.txt', function(myContentFile) {
               var lines = myContentFile.split("\r\n"); for (var line in lines) { var string = lines[line]; $("<li>" + string + "</li>").appendTo("#list"); }
+            }, 'text');
+            $.get('/data/products/rounds-threads.txt', function(myContentFile) {
+              var lines = myContentFile.split("\r\n"); for (var line in lines) { var string2 = lines[line]; $("<li>" + string2 + "</li>").appendTo("#threadlist"); }
             }, 'text');
             </script>
           </div>

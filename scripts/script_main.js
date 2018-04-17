@@ -39,3 +39,13 @@ function stickynavFunction() {
     hasScrolled = true;
   }
 }
+
+// show-hide togglediv
+function showhideFunction() {
+    var x = document.getElementById("togglediv");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
