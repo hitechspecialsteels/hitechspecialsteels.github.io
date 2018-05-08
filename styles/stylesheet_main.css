@@ -117,6 +117,11 @@ h1 {
 /* header */
 header {
   background-color: #102759;
+  background-image: url("/resources/images/headerimage.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: top -400px center;
 }
 
 header .row-dualcol {
@@ -331,4 +336,40 @@ p a {
 
 p a:visited {
   color: blue;
+}
+
+.accountbtn {
+  text-align: right;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 769px) {
+  .accountbtn {
+    text-align: center;
+  }
+}
+
+.accountbtn button {
+  border: 1px solid black;
+  background-color: #104296;
+  color: white;
+  font-weight: bold;
+  padding: 10px 15px;
+}
+
+.accountbtn a {
+  color: white;
+  text-decoration: none;
+}
+
+.login input {
+  padding: 10px 15px;
+  border: 1px solid black;
+}
+
+.login .button {
+  background-color: #104296;
+  border: 1px solid black;
+  font-weight: bold;
+  color: white;
 }

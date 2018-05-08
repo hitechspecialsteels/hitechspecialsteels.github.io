@@ -5,15 +5,14 @@
   <!-- meta-data -->
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Hi-Tech Special Steels Ltd - Processing</title>
-  <meta name="description" content=""/>
+  <title>Hi-Tech Special Steels Ltd - Login</title>
+  <meta name="description" content="Hi-Tech Special Steels is a privately owned company, originally established in 1985 to provide customers with special products not available in general supply."/>
   <meta name="keywords" content="Steel, Dinnington, Alloys, United Kingdom, Hi Tech Special Steels Ltd"/>
   <meta name="author" content="Hi-Tech Special Steels Ltd"/>
   <!-- styles -->
   <link rel="stylesheet" href="/styles/stylesheet_main.css"/>
-  <link rel="stylesheet" href="/styles/stylesheet_about.css"/>
   <!-- scripts -->
-  <script type="text/javascript" src="/scripts/script_main.js">navopenFunction(), stickynavFunction()</script>
+  <script type="text/javascript" src="scripts/script_main.js">navopenFunction(), stickynavFunction()</script>
   <script src="/scripts/jquery-3.3.1.min.js"></script>
   <script>
   $.get("/elements/headernav.html", function(data){$("#insertheader").replaceWith(data);});
@@ -28,21 +27,18 @@
 
 <div id="firstelement" class="contentspacer"></div>
 
-<!-- section: processing -->
+<!-- section: welcome -->
 <section>
   <div class="container">
-    <div class="row-dualcol">
-      <div class="column-dualcol">
-        <div class="columnbox columnborder">
-          <h1>Processing</h1>
-          <p>Our steel processesing methods include steel heat treating and material testing facilities, our in house machines include cold drawing benches, linishing machines, milling equipment, straightening and roll marking facilities.</p>
-        </div>
-      </div>
-      <div class="column-dualcol">
-        <div class="columnbox">
-          <img class="image" src="/resources/images/lathe.jpg" alt="">
-        </div>
-      </div>
+    <div class="columnborder">
+      <h1>Log in to Hi-Tech Special Steels</h1>
+      <form class="login" action="/index.html" method="post">
+        <p>Username:</p>
+        <p><input type="text" name="username"></p>
+        <p>Password:</p>
+        <p><input type="password" name="password"></p>
+        <p><input type="button" class="button" name="submit" value="Log In"></p>
+      </form>
     </div>
   </div>
 </section>
